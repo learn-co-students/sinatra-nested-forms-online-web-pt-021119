@@ -3,7 +3,15 @@ class Ship
 
   SHIPS = []
 
+  def initialize
+    SHIPS << self
+  end
+
   def self.all
     SHIPS
+  end
+
+  def self.clear
+    SHIPS.clear
   end
 end
