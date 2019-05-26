@@ -17,7 +17,7 @@ module FormsLab
 			# binding.pry
 			@pirate.ships << Ship.new({:name => ship[:name], :type => ship[:type],:booty => ship[:booty]})
 		end
-		erb :"/pirates/show"
+		erb :'/pirates/show'
 	end
 
   end
