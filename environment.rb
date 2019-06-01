@@ -7,3 +7,6 @@ require 'sinatra/base'
 require 'sinatra/reloader'
 
 require_all './app'
+
+SHIPS = []
+PIRATES = []

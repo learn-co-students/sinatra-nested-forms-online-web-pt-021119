@@ -1,7 +1,16 @@
-<h1>Display your Pirate here</h1>
-
-
-<h2>Display your first ship here</h2>
-
-
-<h2>Display your second ship here</h2>
+<h1>Ye Old Pirate</h1>
+<img src="https://ih0.redbubble.net/image.395858312.7739/ap,550x550,12x16,1,transparent,t.u3.png" width="200" alt="A really cool pirate">
+<h3>Pirate Name: <%= @pirate.name %></h3>
+<h3>Pirate Weight: <%= @pirate.weight %></h3>
+<h3>Pirate Height: <%= @pirate.height %></h3>
+<br>
+<% count = 1 %>
+<% @ships.each do |ship| %>
+<h3>Ship # <%=count%></h3>
+  <div class="">
+    <h5>Ship Name: <%= ship.name %></h5>
+    <h5>Ship Type: <%= ship.type %></h5>
+    <h5>Ship Booty: <%= ship.booty %></h5>
+  </div>
+  <%count+=1%>
+<% end %>
